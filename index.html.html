@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>溝口公認会計士事務所</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #333;
+      line-height: 1.8;
+      background-color: #f7f7f7;
+    }
+
+    /* Header */
+
+    header {
+      position: relative;
+      height: 55vh;
+      background-image: url('office.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.18);
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    /* Navigation */
+
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 15px 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #777;
+    }
+
+    /* Section */
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 100px 30px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 50px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    /* About */
+
+    #about {
+  position: relative;
+  overflow: hidden;
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  right:   0;
+  bottom:  0;
+  width: 45%;
+  height: 80%;
+  background-image: url('about.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  opacity: 0.05:
+  pointer-events: none;
+}
+
+.about-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  font-size: 20px;
+  color: #555;
+}
+ 
+    /* Service */
+
+    .service-item {
+      background: white;
+      padding: 40px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    /* Profile */
+
+    .profile-wrapper {
+      display: flex;
+      gap: 50px;
+      align-items: flex-start;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+
+    .profile-image img {
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .profile-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .profile-title {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .profile-section {
+      margin-top: 60px;
+    }
+
+    .profile-section ul {
+      padding-left: 20px;
+    }
+
+    .profile-section li {
+      margin-bottom: 15px;
+    }
+
+    /* Insights */
+
+    .insight-item {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+.insight-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.insight-link a {
+  text-decoration: none;
+  color: #1f2f46;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.insight-link a:hover {
+  opacity: 0.7;
+}
+
+
+
+    /* Contact */
+
+    .contact-box {
+      text-align: center;
+      background: white;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #888;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 768px) {
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+
+    <div class="hero">
+      
+    </div>
+
+  </header>
+
+  <!-- Navigation -->
+
+  <nav>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- About -->
+
+<section id="about">
+
+  <h2>About</h2>
+
+  <div class="about-text">
+ 
+     
+      <p>
+        会計・内部統制・KPIは、
+        制度対応や数字管理のためだけではなく、
+        経営の意思決定につながってこそ意味がある。
+      </p>
+
+      <p>
+        経営管理・企業価値向上の観点から、
+        実務に根ざした支援を行っています。
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Service -->
+
+  <section id="service">
+
+    <h2>Service</h2>
+
+    <div class="service-item">
+
+      <h3>経営管理・KPI設計支援</h3>
+
+      <p>
+        KPIは、単なる管理指標ではなく、
+        経営と現場の視線を揃えるための重要な仕組みです。
+      </p>
+
+      <p>
+        企業の成長フェーズや事業特性に応じ、
+        意思決定につながるKPI設計・運用を支援します。
+      </p>
+
+    </div>
+
+    <div class="service-item">
+
+      <h3>ROIC・企業価値向上支援</h3>
+
+      <p>
+        ROICは単なる財務指標ではなく、
+        資本効率を経営にどう落とし込むかが重要です。
+      </p>
+
+      <p>
+        経営管理・事業管理・キャッシュフロー管理等の観点から、
+        企業価値向上に向けた支援を行います。
+      </p>
+
+    </div>
+
+    <div class="service-item">
+
+      <h3>IPO・管理体制整備支援</h3>
+
+      <p>
+        IPOは単なる上場準備ではなく、
+        持続的成長に向けた経営基盤整備のプロセスでもあります。
+      </p>
+
+      <p>
+        内部統制、決算体制、ガバナンス整備等を含め、
+        実務面から支援します。
+      </p>
+
+    </div>
+
+    <div class="service-item">
+
+      <h3>内部監査・内部統制高度化支援</h3>
+
+      <p>
+        内部統制は、制度対応だけでなく、
+        企業グループ全体のガバナンスや
+        経営の透明性向上にもつながります。
+      </p>
+
+      <p>
+        海外子会社を含む内部監査・内部統制の構築・改善を、
+        実務面から支援します。
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Profile -->
+
+  <section id="profile">
+
+    <h2>Profile</h2>
+
+    <div class="profile-wrapper">
+
+      <div class="profile-image">
+        <img src="profile.jpg" alt="溝口 正樹">
+      </div>
+
+      <div class="profile-content">
+
+        <h3>溝口 聖規</h3>
+
+        <p class="profile-title">
+          公認会計士 / CMA / CIA
+        </p>
+
+        <p>
+          公認会計士。元Big4パートナー。
+          会計監査を中心に、ERP導入支援、BPR支援、
+          IPO支援、内部統制構築・改善支援、
+          企業価値評価、財務デューディリジェンス等の業務に従事。
+        </p>
+
+        <p>
+          現在は、内部監査・内部統制高度化、
+          IPO支援、原価計算制度構築・改善、
+          企業価値評価等を中心に、
+          経営管理・企業価値向上の観点から支援を行っている。
+        </p>
+
+        <p>
+          また、上場・非上場企業の社外役員を務めるほか、
+          MBAスクール（経営大学院）にて会計・企業財務分野の講義を担当。
+                  </p>
+
+      </div>
+
+    </div>
+
+    <div class="profile-section">
+
+      <h3>Qualification</h3>
+
+      <ul>
+        <li>公認会計士</li>
+        <li>CMA（日本証券アナリスト協会認定アナリスト）</li>
+        <li>CIA（公認内部監査人）</li>
+        <li>TOEIC 900+</li>
+      </ul>
+
+    </div>
+
+    <div class="profile-section">
+
+      <h3>Career</h3>
+
+      <ul>
+        <li>1993年　京都大学経済学部卒業</li>
+        <li>1993年　青山監査法人 入所</li>
+        <li>1998年　公認会計士登録</li>
+        <li>2007年　有限責任監査法人トーマツ パートナー就任</li>
+        <li>2012年　溝口公認会計士事務所 開設（現任）</li>
+      </ul>
+
+    </div>
+
+    <div class="profile-section">
+
+      <h3>Seminar</h3>
+
+      <ul>
+        <li>
+          日本経営協会<br>
+          「海外子会社の内部統制の整備・運用と監査のポイント」
+        </li>
+
+        <li>
+          近畿自動車リース協会<br>
+          「リース会計のキホンと新リース会計基準のトピックス」
+        </li>
+
+        <li>
+          Dynabook<br>
+          「勘と経験の経営からの脱却のススメ
+          ～データを活用した意思決定～」
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="profile-section">
+
+      <h3>Publications</h3>
+
+      <ul>
+        <li>『財務諸表分析 ゼロから分かる読み方・活かし方』（PHP研究所）</li>
+        <li>『基本の会計用語』（GLOBIS学び放題×知見録）</li>
+        <li>『新リース会計基準の道しるべ』（税務研究会出版局）</li>
+        <li>「会計知識録」（週刊経営財務連載）</li>
+        <li>日経新聞、週刊エコノミスト等への寄稿実績あり</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- Insights -->
+
+  <section id="insights">
+
+    <h2>Insights</h2>
+
+    <div class="insight-item">
+
+      <h3>KPIが形骸化する理由</h3>
+
+      <p>
+        「売上を上げろ」という結果指標だけでは、
+        現場の行動は変わりません。
+        結果を変えるためには、
+        その原因となる事業活動を変える必要があります。
+      </p>
+
+    </div>
+
+    <div class="insight-item">
+
+      <h3>ROICはなぜ現場に浸透しないのか</h3>
+
+      <p>
+        ROICは重要な経営指標ですが、
+        財務部門だけで完結してしまうと、
+        現場の意思決定にはつながりません。
+      </p>
+
+     </div>
+
+ <div class="insight-item">
+
+      <h3>その分析、本当に分析になっている？</h3>
+
+      <p>
+        予算と実績の差異の把握に留まってて、何故差異が生じたのか、現場の活動にまで遡らないと真の要因は見えてきません。
+      </p>
+
+     </div>
+
+  <p class="insight-link">
+    <a href="https://tesmmi.hatenablog.com/" target="_blank">
+      Read More →
+    </a>
+  </p>
+
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact-box">
+
+      <p>
+        ご相談・お問い合わせは、
+        LinkedInまたはメールよりお願いいたします。
+     <p>
+
+<p>
+    Kyoto, Japan
+  </p>
+
+
+<p>
+
+  <a href="https://www.linkedin.com/in/masaki-mizoguchi-49211740a/" target="_blank">
+    LinkedIn Profile
+  </a>
+</p>
+
+      <p>
+        E-mail：tes.mmizoguchi@kuf.biglobe.ne.jp
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    © Mizoguchi CPA Office
+
+  </footer>
+
+</body>
+</html>
