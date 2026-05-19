@@ -19,15 +19,12 @@
 
     header {
       position: relative;
-      height: 55vh;
+      height: 100vh;
       background-image: url('office.jpg');
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      background-position: center center;
+     }
 
     header::before {
       content: "";
@@ -233,6 +230,13 @@
     /* Responsive */
 
     @media (max-width: 768px) {
+
+       header {
+    height: 65vh;
+    background-image: url('office-mobile.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
 
       .hero h1 {
         font-size: 34px;
